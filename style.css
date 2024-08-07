@@ -1,0 +1,229 @@
+body {
+    /* background-image: url(bacground.jpg);
+    background-repeat: no-repeat;
+    background-size: cover; */
+    background: linear-gradient(to bottom, #A890FE, #A1C4FD); 
+
+    color: white;
+    line-height: 1.5;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+      Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  }
+
+  .marquee h1 {
+    color: white;
+    text-shadow: 2px 2px 5px black;
+  }
+
+  h1 {
+    color: white;
+    text-shadow: 2px 2px 5px black;
+  }
+
+  h2 {
+    text-shadow: 2px 2px 5px black;
+  }
+
+  h3 {
+    color: black;
+    text-shadow: 2px 2px 5px black;
+  }
+
+  .letter h3{
+    color: whitesmoke;
+    text-shadow: 2px 2px 5px black;
+  }
+
+  .k h3 {
+    color: white;
+  }
+  .k h1 {
+    color: black;
+  }
+  .k h4 {
+    color: black;
+    text-align: right;
+  }
+  .k h5 {
+    text-align: center;
+    font-size: 40px;
+  }
+
+  .image {
+    border-radius: 5px;
+    border: 3px solid rgb(0, 0, 0);
+    padding: 5px;
+    margin-bottom: 20px;
+    margin-left: 80px;
+  }
+
+  .videok {
+    width: 350px;
+  }
+
+  .container1 {
+    text-align: center;
+    width: 40%;
+    margin-left: 10px;
+    border-radius: 3px;
+    background-color: rgb(30, 30, 30);
+    /* background: linear-gradient(to right, #a0a2a3, #070707); */
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.747),
+      inset -5px -5px 15px rgba(255, 255, 255, 0.226);
+  }
+
+  .container {
+    width: 50%;
+    height: 200px;
+    display: flex;
+    gap: 10px;
+  }
+  
+  .container img {
+    width: 10%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 10px;
+    background-color: #fff5f5;
+    border: 3px solid rgb(0, 0, 0);
+    transition: all ease-out 1s;
+    cursor: pointer;
+  }
+  
+  .container img:hover {
+    width: 180px;
+    height: 300px;
+  }
+
+  .heart div {
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    background-color: transparent;
+    border: 2px solid rgb(44, 44, 44);
+    border-top-left-radius: 50%;
+    border-top-right-radius: 0%;
+    border-bottom-right-radius: 50%;
+  }
+  
+  .heart div:nth-child(1) {
+    top: 12%;
+    left: 42%;
+    animation: animate 10s linear infinite;
+  }
+  
+  .heart div:nth-child(2) {
+    top: 70%;
+    left: 50%;
+    animation: animate 7s linear infinite;
+  }
+  
+  .heart div:nth-child(3) {
+    top: 17%;
+    left: 6%;
+    animation: animate 9s linear infinite;
+  }
+  
+  .heartdiv:nth-child(4) {
+    top: 20%;
+    left: 60%;
+    animation: animate 10s linear infinite;
+  }
+  
+  .heart div:nth-child(5) {
+    top: 67%;
+    left: 10%;
+    animation: animate 6s linear infinite;
+  }
+  
+  .heart div:nth-child(6) {
+    top: 80%;
+    left: 70%;
+    animation: animate 12s linear infinite;
+  }
+  
+  .heart div:nth-child(7) {
+    top: 60%;
+    left: 80%;
+    animation: animate 15s linear infinite;
+  }
+  
+  .heart div:nth-child(8) {
+    top: 32%;
+    left: 25%;
+    animation: animate 16s linear infinite;
+  }
+  
+  .heart div:nth-child(9) {
+    top: 90%;
+    left: 25%;
+    animation: animate 9s linear infinite;
+  }
+  
+  .heart div:nth-child(10) {
+    top: 20%;
+    left: 80%;
+    animation: animate 5s linear infinite;
+  }
+  
+  div.summary {
+    cursor: pointer;
+  }
+  
+  @keyframes animate {
+    0% {
+      transform: scale(0) translateY(0) rotate(0);
+      opacity: 1;
+    }
+    100% {
+      transform: scale(1.3) translateY(-90px) rotate(360deg);
+      opacity: 0;
+    }
+  }
+
+  @media (max-width: 760px) {
+    .image{
+      width: 50%px;
+      height: 90%px;
+    }
+
+    .marquee {
+      width: 100%;
+      font-size: 12px;
+    }
+
+    .container1 {
+      width: 95%;
+    }
+  
+    .container1 h1 {
+      width: 100%;
+      font-size: 27px;
+    }
+
+    h2{
+      width: 95%;
+    }
+
+    h3{
+      width: 95%;
+      font-size: 17px;
+    }
+
+    div.videok {
+      padding: 20px;
+      margin-top: 20px;
+      width: 40%;
+      height: 90%;
+    }
+
+    .container {
+      width: 280px;
+      height: 150px;
+    }
+
+    .heart {
+      width: 95%;
+    }
+
+  }
